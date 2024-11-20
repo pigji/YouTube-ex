@@ -1,0 +1,72 @@
+.video__inner {
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  justify-content: space-between;
+
+  @media (max-width: 1400px) {
+    grid-template-columns: repeat(3, 32%);
+    gap: 15px;
+  }
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, 49%);
+    gap: 10px;
+  }
+  @media (max-width: 400px) {
+    grid-template-columns: repeat(1, 100%);
+  }
+
+  .video {
+    margin-bottom: 20px;
+  }
+}
+
+.video__inner.search {
+  min-height: 100vh;
+  .video {
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: #111;
+
+    //미디어쿼리( 브라우저가 600px 미만일때 )
+    @media (max-width: 600px) {
+      margin-bottom: 10px;
+    }
+    .video__thumb {
+      a {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding-bottom: 56.25%; //16:9비율
+        position: relative;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    .video__info {
+      padding: 10px 15px;
+      color: #fff;
+      .title {
+        font-size: 1rem;
+        @include line-two; //2줄 정렬(제목이 2줄 이상일 경우 뒤에 ...으로 표시)
+      }
+      .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        .author {
+          @include line-one; //1줄 정렬
+          color: #666;
+          transition: all 0.3s;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+        .date {
+          font-size: 14px;
+          color: #666;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+//한줄 효과
+@mixin line-one{
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;//말줄임표로 잘린 텍스트 표시
+}
+
+//두줄 효과
+@mixin line-two {
+  overflow:hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; //원하는 라인수
+  -webkit-box-orient: vertical;
+}
+//두줄 이상
+@mixin line($num) {
+  overflow:hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $num; //원하는 라인수
+  -webkit-box-orient: vertical;
+}

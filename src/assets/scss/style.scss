@@ -1,0 +1,17 @@
+@charset "UTF-8";//문자 인코딩 설정
+
+//setting
+@import 'setting/fonts';//폰트 파일과 관련된 css
+@import 'setting/vars'; //변수와 관련된 css
+@import 'setting/reset'; //브라우저 스타일 초기화나 리셋 관련 css
+@import 'setting/mixin'; //믹스인과 관련되 css
+@import 'setting/common'; //공통적인 css
+
+//section
+@import 'section/layout';
+@import 'section/header';
+@import 'section/search';
+@import 'section/today';
+@import 'section/developer';
+@import 'section/video';
+@import 'section/swiper';

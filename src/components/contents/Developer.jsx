@@ -37,7 +37,7 @@ const Developer = ({ videos, title, id }) => {
           }}
           breakpoints={{
             640: {
-              slidesPerView: 5, //브라우저가 640px 미만일때 보여지는 요소 5개로 설정
+              slidesPerView: 5,
               spaceBetween: 15
             },
             768: {

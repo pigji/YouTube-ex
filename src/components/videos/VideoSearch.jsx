@@ -7,7 +7,7 @@ const VideoSearch = ({videos}) => {
       {videos.map((video, index) => (
         <div className='video' key={index}>
           <div className='video__thumb play__icon'>
-            <Link
+            <Link 
               to={`/video/${video.id.videoId}`}
               style={{backgroundImage: `url(${video.snippet.thumbnails.high.url})`}}
             ></Link>

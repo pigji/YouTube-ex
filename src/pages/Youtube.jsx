@@ -20,7 +20,7 @@ const Youtube = () => {
       title="유튜브 사이트"
       description="유튜브 사이트 튜토리얼입니다">
       <section id='youtubePage' className={youtubePageClass}>
-        <h2>😋 나만의 유튜브 사이트를 만들고 싶다면...</h2>
+        <h2>😋 나만의 포트폴리오 사이트를 만들고 싶다면...</h2>
         <div className='video__inner'>
           <VideoCards videos={youtubeText}/>
         </div>
